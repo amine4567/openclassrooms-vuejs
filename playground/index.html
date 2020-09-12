@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My website</title>
+</head>
+
+<body>
+    <h1 id="app">Hello {{ name }}! You are {{ age }} years old.</h1>
+    <script src="../vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                name: "John Doe",
+                age: 30
+            }
+        })
+    </script>
+</body>
+
+</html>
